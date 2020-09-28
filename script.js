@@ -1,9 +1,15 @@
+var currentHour = moment().hours()
+
+console.log(currentHour)
+
+alert("hi")
+
 $(".saveBtn").on("click", function() {
-   var event= $("<textarea>".textContent);
+   var event= $(this).siblings(".textValue").val();
    var time= 
 
-   localStorage.setItem()
-
+   localStorage.setItem(event)
+   console.log(event)
 });
 
 
@@ -12,7 +18,23 @@ function timeUpdate() {
 
    $(".col-sm-8").each(function() {
 
+      var block = $()
+
+
+      if(block = currentHour) {
+
+         
+
+      }
+
+
+
+
+
    });
 };
 
 
+renewTime()
+
+var interval = setInterval(renewTime, 6000)
