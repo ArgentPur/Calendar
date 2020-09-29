@@ -6,7 +6,7 @@ alert("hi")
 
 $(".saveBtn").on("click", function() {
    var event= $(this).siblings(".textValue").val();
-   var time= 
+   var time=  $(this).siblings("")
 
    localStorage.setItem(event)
    console.log(event)
@@ -35,6 +35,3 @@ function timeUpdate() {
 };
 
 
-renewTime()
-
-var interval = setInterval(renewTime, 6000)
