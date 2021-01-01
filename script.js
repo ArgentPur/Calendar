@@ -10,8 +10,8 @@ $(".saveBtn").on("click", function() {
    let time=  $(this).siblings(".hour").val();
 
    console.log(event, time); 
-   localStorage.setItem(event, time,);
-   JSON.stringify(event, time);
+   //localStorage.setItem(event, time,);
+   //JSON.stringify(event, time);
    
    
   
@@ -32,6 +32,10 @@ function timeUpdate() {
 
       if(block > currentHour) {
          $(this).class(".future")
+      };
+
+      if(block < currentHour) {
+         $(this).class(".past")
       };
 
 
