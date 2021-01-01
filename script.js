@@ -9,10 +9,11 @@ $(".saveBtn").on("click", function() {
    let event= $(this).siblings(".textValue").val();
    let time=  $(this).siblings(".hour").val();
 
+   console.log(event, time); 
    localStorage.setItem(event, time,);
    JSON.stringify(event, time);
-   console.log(event);
-   console.log(time);
+   
+   
   
 });
 
