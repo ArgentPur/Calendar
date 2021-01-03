@@ -8,10 +8,11 @@ console.log(date);
 $(".saveBtn").on("click", function() {
    let event= $(this).siblings(".textValue").val();
    let time=  $(this).siblings(".hour").val();
-
-   console.log(event, time); 
-   //localStorage.setItem(event, time,);
-   //JSON.stringify(event, time);
+   
+   
+   console.table(event); 
+   localStorage.setItem(event, time,);
+   JSON.stringify(event, time);
    
    
   
