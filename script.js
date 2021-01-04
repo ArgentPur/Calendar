@@ -10,7 +10,7 @@ $(".saveBtn").on("click", function() {
    let time=  $(this).siblings(".hour").val();
    
    
-   console.table(event); 
+   console.table(event, time); 
    localStorage.setItem(event, time,);
    JSON.stringify(event, time);
    
